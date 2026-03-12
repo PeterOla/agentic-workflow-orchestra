@@ -41,13 +41,11 @@ Poor fit:
 
 ## Install
 
-After publishing this repository, install it with:
+Install with:
 
 ```bash
 npx skills add PeterOla/agentic-workflow-orchestra --agent github-copilot --copy -y
 ```
-
-If you publish under a different owner or repo name, update the install command accordingly.
 
 ## What The Skill Provides
 
@@ -143,31 +141,3 @@ Describe what this workflow owns and what it must not do.
 Write a completion log to `agents/logs/` with built files, contracts, issues, and next steps.
 ```
 
-## Why The Name Is Spelled This Way
-
-The public package name is `agentic-workflow-orchestra`.
-
-The earlier `orchastra` variants are incorrect and should not be published.
-
-## First Public Push Checklist
-
-Before the first GitHub push for the public skill repository:
-
-- confirm the repository name is exactly `agentic-workflow-orchestra`
-- keep `README.md`, `SKILL.md`, and `LICENSE` at the repo root
-- verify the install command matches the final owner and repo path
-- confirm `SKILL.md` reads coherently in a clean repository with no GameIQ context
-- remove or avoid any project-specific references that imply hidden prerequisites
-- check that the examples are generic and adaptable across stacks
-- verify the MIT license copyright line uses the exact public author name you want
-- test the installation flow from a separate clean project after publishing
-
-## Release Sanity Check
-
-This package is ready to publish when:
-
-- the install command points to the real public repo
-- setup instructions create every required directory
-- the skill works as a standalone artifact without private project history
-- the compatibility alias is not presented as the primary package
-- an external user can understand the quick start without additional explanation
